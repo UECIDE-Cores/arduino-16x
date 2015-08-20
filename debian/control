@@ -1,0 +1,245 @@
+Source: arduino-16x
+Section: cores
+XBSC-Family: avr
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://arduino.cc
+
+Package: arduino-16x
+Architecture: all
+XBSC-Group: Arduino
+Depends: avr-gcc
+Recommends: libaudio-arduino-16x, libeeprom-arduino-16x, libesplora-arduino-16x, libethernet-arduino-16x, libgsm-arduino-16x, libliquidcrystal-arduino-16x, libsd-arduino-16x, libservo-arduino-16x, libsoftwareserial-arduino-16x, libspi-arduino-16x, libstepper-arduino-16x, libtft-arduino-16x, libwifi-arduino-16x, libwire-arduino-16x, libschedule-arduino-16x, libbridge-arduino-16x, libspacebrewyun-arduino-16x, libusbhost-arduino-16x
+Description: Arduino 1.6.x
+ The standard Arduino 1.6.x core for AVR boards
+
+Package: libaudio-arduino-16x
+Architecture: all
+Depends: arduino-16x
+Provides: Audio.h
+Section: libraries
+XBSC-Family: avr
+XBSC-Group: Storage
+XBSC-Subgroup: EEPROM
+Description: Arduino 1.6.x Audio Library
+ Audio library for Arduino boards.
+
+Package: libeeprom-arduino-16x
+Architecture: all
+Depends: arduino-16x
+Provides: EEPROM.h
+Section: libraries
+XBSC-Family: avr
+XBSC-Group: Storage
+XBSC-Subgroup: EEPROM
+Description: Arduino 1.6.x EEPROM Library
+ Store small amounts of data in the EEPROM non-volatile memory of the
+ AVR microcontrollers.
+
+Package: libesplora-arduino-16x
+Architecture: all
+Depends: arduino-16x
+Provides: Esplora.h
+XBSC-Family: avr
+Section: libraries
+XBSC-Group: Board Support
+Description: Arduino Esplora 1.6.x
+ Simple interface to the Arduino Esplora on-board hardware and 
+ peripherals.  For the 1.6.x core.
+
+Package: libethernet-arduino-16x
+Architecture: all
+Depends: arduino-16x, libspi-arduino-16x
+XBSC-Family: avr
+Provides: Ethernet.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+Description: Arduino 1.6.x Ethernet
+ Library for the Arduino Ethernet (W5100) Shield.
+
+Package: libgsm-arduino-16x
+Architecture: all
+Provides: GSM.h
+XBSC-Family: avr
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Modems
+Depends: arduino-16x
+Description: Arduino 1.6.x GSM Library
+ Communicate with a GSM Modem.
+
+Package: libliquidcrystal-arduino-16x
+Architecture: all
+Provides: LiquidCrystal.h
+Section: libraries
+XBSC-Group: Display
+XBSC-Family: avr
+XBSC-Subgroup: LCD
+Depends: arduino-16x
+Description: Arduino 1.6.x Liquid Crystal library
+ HD44780 LCD Interface Library
+
+Package: libsd-arduino-16x
+Architecture: all
+Provides: SD.h
+Section: libraries
+XBSC-Group: Storage
+XBSC-Family: avr
+XBSC-Subgroup: SD and MMC Cards
+Depends: arduino-16x
+Description: Arduino 1.6.x SD Library
+ The standard Arduino SD card access library
+
+Package: libservo-arduino-16x
+Architecture: all
+Provides: Servo.h
+Section: libraries
+XBSC-Group: Motor
+XBSC-Subgroup: Servo
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x Servo Library
+ Drive servos with the hardware PWM pins of the Arduino
+
+Package: libsoftwareserial-arduino-16x
+Architecture: all
+Provides: SoftwareSerial.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Serial
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x Software Serial
+ Primitive bit-banged serial emulation for Arduino boards
+
+Package: libspi-arduino-16x
+Architecture: all
+Provides: SPI.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: SPI
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x SPI Library
+ The standard Arduino SPI library
+
+Package: libstepper-arduino-16x
+Architecture: all
+Provides: Stepper.h
+Section: libraries
+XBSC-Group: Motor
+XBSC-Subgroup: Stepper
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x stepper motor library
+ Control stepper motors from an Arduino
+
+Package: libtft-arduino-16x
+Architecture: all
+Provides: TFT.h
+Section: libraries
+XBSC-Group: Display
+XBSC-Subgroup: TFT
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x TFT Library
+ Connect to the Arduino TFT shields
+
+Package: libwifi-arduino-16x
+Architecture: all
+Provides: WiFi.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x WiFi Library
+ Interface with the Arduino WiFi Shield
+
+Package: libwire-arduino-16x
+Architecture: all
+Provides: Wire.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: I2C
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x Wire Library
+ Connect I2C devices to an Arduino
+
+Package: libcontrol-arduino-16x
+Architecture: all
+Provides: Robot-UL-Control.h
+Section: libraries
+XBSC-Group: Robotics
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x Robot Control library
+ Robot Control library for the Arduino 1.6.x core.
+
+Package: libirremote-arduino-16x
+Architecture: all
+Provides: RobotIRremote.h
+Section: libraries
+XBSC-Group: Robotics
+XBSC-Family: avr
+Depends: arduino-16x
+Description: Arduino 1.6.x Robot IR Remote library
+ Infra-Red Remote Control library for the Arduino 1.6.x core.
+
+Package: libmotor-arduino-16x
+Architecture: all
+Provides: Robot-UL-Motor.h
+Section: libraries
+XBSC-Group: Robotics
+Depends: arduino-16x
+XBSC-Family: avr
+Description: Arduino 1.6.x Robot Motor library
+ Motor Control library for the Arduino 1.6.x core.
+
+Package: libscheduler-arduino-16x
+Architecture: all
+Provides: Scheduler.h
+Section: libraries
+XBSC-Group: Time
+XBSC-Subgroup: Schedule
+Depends: arduino-16x
+XBSC-Family: avr
+Description: Arduino 1.6.x Schedule library
+ Schedule library for the Arduino 1.6.x core.
+
+Package: libbridge-arduino-16x
+Architecture: all
+Provides: Bridge.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Serial
+Depends: arduino-16x
+XBSC-Family: avr
+Description: Arduino 1.6.x Bridge library
+ Bridge library for Adunino Yun and similar boards.
+
+Package: libspacebrewyun-arduino-16x
+Architecture: all
+Provides: SpacebrewYun.h
+Section: libraries
+XBSC-Group: Board Support
+Depends: arduino-16x
+XBSC-Family: avr
+Description: Arduino 1.6.x SpacebrewYun library
+ SpacebrewYun support library
+
+Package: libusbhost-arduino-16x
+Architecture: all
+Provides: Temboo.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: USB
+Depends: arduino-16x
+XBSC-Family: avr
+Description: Arduino 1.6.x USB Host library
+ USB Host library for Arduino 1.6.x
+

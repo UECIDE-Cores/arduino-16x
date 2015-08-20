@@ -1,0 +1,5 @@
+hardware/arduino/avr/cores/arduino cores/arduino-16x
+build/shared/examples cores/arduino-16x
+uecide/tools cores/arduino-16x
+uecide/avr/core.txt cores/arduino-16x
+build/shared/icons cores/arduino-16x
